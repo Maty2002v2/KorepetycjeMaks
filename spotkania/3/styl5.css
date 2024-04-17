@@ -1,0 +1,56 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+#baner{
+    background-color: #009999;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+#baner h1 {
+    margin-top: 0px;
+}
+
+#pierwszy,#drugi,#trzeci,#czwarty{
+    font-family: Arial;
+    background-color: #009999;
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: 150px;
+
+}
+#lewy,#prawy{
+    background-color: #669999;
+    width: 30%;
+    height: 600px;
+
+}
+#środkowy{
+    background-color: #99CCCC;
+    width: 40%;
+    height: 600px;
+    text-align: center;
+}
+footer{
+background-color: #009999;
+color: white;
+text-align: right;
+}
+table,td,th{
+border: 1px solid green;
+}
+#przycisk{
+    border: none;
+    margin: 10px;
+    background-color: green;
+    color: white;
+}

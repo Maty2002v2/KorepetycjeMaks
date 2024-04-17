@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal ogłoszeniowy</title>
+    <link rel="stylesheet" href="styl5.css">
+</head>
+<body>
+    <div id="baner">
+        <h1>Portal Ogłoszeniowy</h1>
+    </div>
+
+    <div class="flex">
+        <div id="pierwszy">
+            <img src="logo-male.png" >
+    
+        </div>
+        <div id="drugi">
+            <h3>
+                Adres
+            </h3>
+            <p>ul. Morska 45 Gdynia</p>
+        </div>
+        <div id="trzeci">
+            <h3>telefon</h3>
+            <p>601601601</p>
+        </div>
+        <div id="czwarty">
+            <h3>e-mail</h3>
+            <p>ogloszenia@poczta.pl</p>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div id="lewy">
+            <h2>
+                Ceny ogłoszeń
+            </h2>
+            <table> 
+                <tr>
+                    <th>Liczba ogłoszeń</th>
+                    <th>Cena ogłoszeń</th>
+                    <th>Bonus</th>
+                </tr>
+                <tr>
+                    <td>1-50</td>
+                    <td>2 PLN</td>
+                    <td rowspan="2">Subskrypcja newslettera to upust 0,20 PLN na ogłoszenie</td>
+                </tr>
+                <tr>
+                    <td>51 i więcej</td>
+                    <td>1 PLN</td>
+                </tr>
+                
+                
+            </table>
+        </div>
+        <div id="środkowy">
+            <h2>Witamy na stronie naszego portalu!</h2>
+            <img src="logo-duze.png" alt="ogłoszenia">
+        </div>
+        <div id="prawy">
+            <h2>Ile kosztuje ogłoszenie?</h2>
+            Podaj liczbę ogłoszeń:<br><input type="number" id="num" >  <br>
+            <input type="checkbox" id="check" >Policz upust na newsletter<br>
+            <button id="przycisk" onclick="obliczenia()">Oblicz</button>
+            <p id="pr"></p>
+        </div>
+    </div>
+
+    <footer>
+        Portal ogłoszeniowy opracował: 00000000000
+    </footer>
+        <script src="skrypt.js"></script>
+</body>
+</html>
