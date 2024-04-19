@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" id="suwak" min="0" max="100" value="0" onchange="wartosc()">
+<div id="liczba">0</div>
+<script>
+    function wartosc() {
+        let suwak = document.getElementById("suwak");
+        let wartosc = document.getElementById("liczba");
+        wartosc.innerHTML = suwak.value;
+    }
+</script>
+</body>
+</html>
