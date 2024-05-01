@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docs</title>
+    
+</head>
+<body>
+<input type="checkbox" id="check" name="check"  onclick="sprawdzanie()" > <label for="check">Zapoznałem się z regulaminem</label>
+
+<h2 id="wys"></h2>
+<script>
+    function sprawdzanie(){
+        let spr = document.getElementById("check").checked;
+        let send = document.getElementById("wys");
+    if(spr){
+        send.innerHTML = "Pamiętaj! Koniecznie przeczytaj nasz regulamin."
+    }else{
+        send.innerHTML = ""
+    }
+    }
+</script>
+</body>
+</html>

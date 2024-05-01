@@ -6,14 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <select>
-        <option value="babia.jpg">babia</option>
-        <option value="rysy.jpg">rysy</option>
-        <option value="sniezka.jpg">sniezka</option>
-        <option value="wybierz.jpg">wybierz</option>
+    <select id="wybor" onchange="obz()">
+        <option value="babia.png" >babia</option>
+        <option value="rysy.png">rysy</option>
+        <option value="sniezka.png">sniezka</option>
+        <option value="wybierz.png">wybierz</option>
     </select>
+     <p id="wyswietalnie"></p>
+
+
+     <img src="" alt="" id="obj" width="100" height="100">
+
+    <div id="img">
+        <p>jestem tu</p>
+    </div>
     <script>
+        // function wys(){
+        //     let wybor = document.getElementById("wybor").value;
+        //     let wys = document.getElementById("wyswietalnie");
+        //     console.log(wybor)
+        //     wys.innerHTML = "Wybrałeś nazwa pasma " + wybor
+        // }
         
+
+        function obz(){
+            let wybor = document.getElementById("wybor").value;
+            let wys = document.getElementById("obj");
+            wys.src = "./img/" + wybor ;
+            wys.alt = wybor;
+            
+            let div = document.getElementById("img");
+
+            div.innerHTML = `<img src="./img/${wybor}" alt="" id="obj" width="100" height="100">`;
+        }
+
+
+
+
+
+
+
+
+
+
         //dodac folder imgs, gdzie beda obrazki o odpowiednich nazwach i formatach (jak w select)
 
         //dodac pusty element zdjecia w html
@@ -23,7 +58,7 @@
 
         //tworzymy funkcje xyz ktora bedzie ustawiac zdjecie oraz bedzie wywolywana na change evencie elementu select
             //stworzenie zmiennej z wartoscia elementu select (potencjalnie będzie to .value, jeśli nie to .text)
-            //odnoczac sie przez .src dla zmeinnej img ustawienie odpowiedzniej sciezki do wybranego obrazka
+            //odnoszac sie przez .src dla zmeinnej img ustawienie odpowiedzniej sciezki do wybranego obrazka
                 //odpowiednia sciezka bedzie budowana przez wartosc pobrana z selecta i w zaleznosci od struktury folderow znaku ./ lub ../
 
     </script>

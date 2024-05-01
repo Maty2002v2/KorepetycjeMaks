@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docs</title>
+    <style>
+            #obramowanie{
+                height: 300px;
+                width: 300px;
+                border: 1px black solid;
+              
+            }
+    </style>
+</head>
+<body>
+
+
+<div id="obramowanie"></div>
+<input type="button" value="czerwone tlo" id="red" onclick="kolor3(this, 'red')">
+<input type="button" value="zielone tlo" id="green" onclick="kolor3(this, 'green')">
+<script>
+function kolor(){
+let czer = document.getElementById("red")
+let wys = document.getElementById("obramowanie")
+wys.style.backgroundColor = "red"
+}
+
+
+function kolor2(){
+    let ziel = document.getElementById("green")
+    let wys = document.getElementById("obramowanie")
+    wys.style.backgroundColor = "green"
+}
+function kolor3(element, color){
+    let wys = document.getElementById("obramowanie")
+    wys.style.backgroundColor = color
+}
+</script>
+</body>
+</html>
