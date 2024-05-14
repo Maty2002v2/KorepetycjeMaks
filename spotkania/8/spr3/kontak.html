@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="kontener">
+    <div id="baner">
+        <img src="../8/spr/obraz.png" alt="Pogotowie komputerowe">
+    </div>
+    <div id="menu">
+        <a href="index.html">Strona Główna</a>
+        <a href="kontak.html">Kontakt</a>
+
+    </div>
+   
+
+<div id="b1">
+
+</div>
+<div id="b2">
+    <h2>Kontak</h2>
+    <table>
+        <tr>
+            <td>Imię</td>
+            <td><input type="text" id="imie"></td>
+        </tr>
+        <tr>
+            <td>Nazwisko</td>
+            <td><input type="text" id="nazwisko"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" id="mail"></td>
+        </tr>
+        <tr>
+            <td>Zgłoszenie</td>
+            <td>
+                <select id="wybor">
+                    <option value="naprawa komputerów">naprawa komputerów</option>
+                    <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                    <option value="wirusy">wirusy</option>
+                    <option value="konfiguracja LAN">konfiguracja LAN</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" id="spr" checked>Wyślij kopie wiadomości</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="reset" value="Czyść" onclick="f2()"> <input type="button" value="Wyślij" onclick="f1()"></td>
+        </tr>
+    </table>
+    <hr>
+    <p id="wys"></p>
+</div>
+<div id="b3"></div>
+</div>
+    <footer>
+        Autor: <i>numer</i>
+    </footer>
+<script src="skrypt.js"></script>
+</body>
+</html>
+
